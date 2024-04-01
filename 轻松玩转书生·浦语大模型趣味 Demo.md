@@ -69,7 +69,7 @@ snapshot_download("Shanghai_AI_Laboratory/internlm2-chat-1_8b",
 
 ​	下载完成后如下所示
 
-![image-20240331113110617](typora-user-images\image-20240331113110617.png)   
+![image-20240331113110617](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240331113110617.png)   
 
 ### Step3：运行 cli_demo
 
@@ -123,7 +123,7 @@ snapshot_download("Shanghai_AI_Laboratory/internlm2-chat-1_8b",
 
 # *基础作业结果展示：*
 
-![image-20240331211124765](typora-user-images\image-20240331211124765.png)
+![image-20240331211124765](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240331211124765.png)
 
 ## **实战：部署实战营优秀作品 `八戒-Chat-1.8B` 模型**
 
@@ -156,7 +156,7 @@ snapshot_download("Shanghai_AI_Laboratory/internlm2-chat-1_8b",
 
 ​	运行截图：
 
-​	![image-20240331194234776](typora-user-images\image-20240331194234776.png)
+​	![image-20240331194234776](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240331194234776.png)
 
 3. 待程序运行的同时，对端口环境配置本地 `PowerShell` 。使用快捷键组合 `Windows + R`（Windows 即开始菜单键）打开指令界面，并输入命令，按下回车键。（Mac 用户打开终端即可）。
 
@@ -172,7 +172,7 @@ snapshot_download("Shanghai_AI_Laboratory/internlm2-chat-1_8b",
 
 ​	运行结果：
 
-​	![image-20240331201638709](typora-user-images\image-20240331201638709.png)
+​	![image-20240331201638709](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240331201638709.png)
 
 ## **实战：使用 `Lagent` 运行 `InternLM2-Chat-7B` 模型（开启 30% A100 权限后才可开启此章节）**
 
@@ -180,7 +180,7 @@ snapshot_download("Shanghai_AI_Laboratory/internlm2-chat-1_8b",
 
 Lagent 是一个轻量级、开源的基于大语言模型的智能体（agent）框架，支持用户快速地将一个大语言模型转变为多种类型的智能体，并提供了一些典型工具为大语言模型赋能。它的整个框架图如下:
 
-![image-20240331201723910](typora-user-images\image-20240331201723910.png)
+![image-20240331201723910](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240331201723910.png)
 
 Lagent 的特性总结如下：
 
@@ -219,7 +219,7 @@ Lagent 的特性总结如下：
 
 ​	运行效果图
 
-![image-20240331202716221](typora-user-images\image-20240331202716221.png)
+![image-20240331202716221](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240331202716221.png)
 
 ### Step2：使用 `Lagent` 运行 `InternLM2-Chat-7B` 模型为内核的智能体
 
@@ -263,9 +263,9 @@ Lagent 的特性总结如下：
 
 ### 进阶作业：*`Lagent` 工具调用 `数据分析` Demo 部署*
 
-![image-20240331205810686](typora-user-images\image-20240331205810686.png)
+![image-20240331205810686](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240331205810686.png)
 
-![image-20240331210603447](typora-user-images\image-20240331210603447.png)
+![image-20240331210603447](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240331210603447.png)
 
 
 
@@ -279,7 +279,7 @@ Lagent 的特性总结如下：
 - 准确的图文问题解答能力：`浦语·灵笔2` 具有海量图文知识，可以准确的回复各种图文问答难题，在识别、感知、细节描述、视觉推理等能力上表现惊人。
 - 杰出的综合能力： `浦语·灵笔2-7B` 基于 `书生·浦语2-7B` 模型，在13项多模态评测中大幅领先同量级多模态模型，在其中6项评测中超过 `GPT-4V` 和 `Gemini Pro`。
 
-![image-20240401074516594](typora-user-images\image-20240401074516594.png)
+![image-20240401074516594](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240401074516594.png)
 
 ### Step1：环境配置并下载源码（此任务需要50%A100）
 
@@ -327,7 +327,7 @@ Lagent 的特性总结如下：
 
 ​	结果图
 
-![image-20240401093345616](typora-user-images\image-20240401093345616.png)
+![image-20240401093345616](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240401093345616.png)
 
 ### Step3：图片理解实战
 
@@ -354,7 +354,7 @@ Lagent 的特性总结如下：
 
 ### 	进阶作业：*`浦语·灵笔2` 的 `图文创作` 及 `视觉问答` 部署*
 
-![image-20240401124042727](typora-user-images\image-20240401124042727.png)
+![image-20240401124042727](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240401124042727.png)
 
 ### *进阶作业：使用huggingface下载包，下载`InternLM2-Chat-7B` 的 `config.json` 文件到本地*
 
@@ -372,13 +372,13 @@ Lagent 的特性总结如下：
    os.system('huggingface-cli download --resume-download internlm/internlm2-chat-7b --local-dir your_path')
    ```
 
-​	![image-20240401125100191](typora-user-images\image-20240401125100191.png)
+​	![image-20240401125100191](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240401125100191.png)
 
 3. 在终端运行python文件
 
-   ![image-20240401125241972](typora-user-images\image-20240401125241972.png)
+   ![image-20240401125241972](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240401125241972.png)
 
-​		![image-20240401125607609](typora-user-images\image-20240401125607609.png)
+​		![image-20240401125607609](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240401125607609.png)
 
 3. 以下内容将展示使用 `huggingface_hub` 下载模型中的部分文件
 
@@ -389,5 +389,5 @@ Lagent 的特性总结如下：
    hf_hub_download(repo_id="internlm/internlm2-7b", filename="config.json")
    ```
 
-![image-20240401130257122](typora-user-images\image-20240401130257122.png)
+![image-20240401130257122](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240401130257122.png)
 

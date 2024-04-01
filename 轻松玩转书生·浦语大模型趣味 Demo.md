@@ -20,7 +20,7 @@
 
 ​		创建完成之后如下图：
 
-![image-20240331112154701](typora-user-images\image-20240331112154701.png)
+![image-20240331112154701](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240331112154701.png)
 
 3. 之后激活对应的环境并按照以下指令安装包
 

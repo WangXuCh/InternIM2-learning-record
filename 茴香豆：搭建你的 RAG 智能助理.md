@@ -13,7 +13,7 @@ LLM对知识库中没有的问题回答时会产生幻觉，为了解决这个�
 
 如图所示，由于茴香豆是一款比较新的应用， `InternLM2-Chat-7B` 训练数据库中并没有收录到它的相关信息。左图中关于 huixiangdou 的 3 轮问答均未给出准确的答案。右图未对 `InternLM2-Chat-7B` 进行任何增训的情况下，通过 RAG 技术实现的新增知识问答。
 
-![image-20240407101140114](img\image-20240407101140114.png)
+![image-20240407101140114](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240407101140114.png)
 
 ### RAG工作原理
 
@@ -26,9 +26,9 @@ LLM对知识库中没有的问题回答时会产生幻觉，为了解决这个�
 
 - 相似性检索：根据用户的查询向量，使用向量数据库快速找到最相关向量的过程。通常通过计算余弦相似度或其他相似度度量来完成。检索结果根据相似度得分进行排序，最相关的文档将被用于后续的文本生成。
 
-  ![image-20240411164316087](img\image-20240411164316087.png)
+  ![image-20240411164316087](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240411164316087.png)
 
-  ![image-20240411164334881](img\image-20240411164334881.png)
+  ![image-20240411164334881](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240411164334881.png)
 
 - 向量表示的优化：包括使用更高级的文本编码技，如句子嵌入或段落嵌入，以及对数据库进行优化以支持大规模向量搜索。
 
@@ -36,7 +36,7 @@ LLM对知识库中没有的问题回答时会产生幻觉，为了解决这个�
 
 RAG的概念最早由Meta的Lewis等人在2020《Retrieval-Augmented Generation for Konowledge-Intensive NLP Tasks》中提出。
 
-![image-20240411164549516](img\image-20240411164549516.png)
+![image-20240411164549516](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240411164549516.png)
 
 Naive RAG: 问答系统、信息检索
 
@@ -46,7 +46,7 @@ Modular RAG: 多模态任务、对话系统
 
 ### RAG常见的优化方法
 
-![image-20240411164727939](img\image-20240411164727939.png)
+![image-20240411164727939](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240411164727939.png)
 
 ### RAG vs. FineTuning
 
@@ -84,11 +84,11 @@ Modular RAG: 多模态任务、对话系统
 
 ### LLM模型优化方法比较
 
-![image-20240411165617203](img\image-20240411165617203.png)
+![image-20240411165617203](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240411165617203.png)
 
 ### 评价框架和基准测试
 
-![image-20240411165644793](img\image-20240411165644793.png)
+![image-20240411165644793](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240411165644793.png)
 
 
 
@@ -116,11 +116,11 @@ Modular RAG: 多模态任务、对话系统
   - 传统NLP解决方案无法准确解析用户意图，且往往无法提供满意答案
   - 需要一个能在群聊中准确识别与回答相关问题的智能助手，同时避免造成消息过载
 
-![image-20240411172637450](img\image-20240411172637450.png)
+![image-20240411172637450](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240411172637450.png)
 
-![image-20240411172845869](img\image-20240411172845869.png)
+![image-20240411172845869](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240411172845869.png)
 
-![image-20240411172858695](img\image-20240411172858695.png)
+![image-20240411172858695](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240411172858695.png)
 
 
 
@@ -144,7 +144,7 @@ Modular RAG: 多模态任务、对话系统
    conda activate InternLM2_Huixiangdou
    ```
 
-​	复制并激活环境的示意图![image-20240407102845521](img\image-20240407102845521.png)
+​	复制并激活环境的示意图![image-20240407102845521](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240407102845521.png)
 
 4. 下载基础文件
 
@@ -162,7 +162,7 @@ Modular RAG: 多模态任务、对话系统
 
    结果截图：
 
-   ![image-20240407103050888](img\image-20240407103050888.png)
+   ![image-20240407103050888](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240407103050888.png)
 
 5. 利用下面的指令安装茴香豆所需依赖
 
@@ -177,9 +177,9 @@ Modular RAG: 多模态任务、对话系统
    # apt update && apt -y install python-dev python libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libpulse-dev
    ```
 
-​	![image-20240407103204218](img\image-20240407103204218.png)
+​	![image-20240407103204218](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240407103204218.png)
 
-![image-20240407103716874](img\image-20240407103716874.png)
+![image-20240407103716874](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240407103716874.png)
 
 6. 下载茴香豆仓库
 
@@ -190,7 +190,7 @@ Modular RAG: 多模态任务、对话系统
    git checkout 447c6f7e68a1657fce1c4f7c740ea1700bde0440
    ```
 
-   ![image-20240407103727328](img\image-20240407103727328.png)
+   ![image-20240407103727328](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240407103727328.png)
 
 ### Step2：使用茴香豆搭建RAG助手
 
@@ -216,7 +216,7 @@ Modular RAG: 多模态任务、对话系统
 
 ​	修改完成后如下图所示：
 
-![image-20240407103955749](img\image-20240407103955749.png)
+![image-20240407103955749](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240407103955749.png)
 
 2. 创建知识库
 
@@ -229,7 +229,7 @@ Modular RAG: 多模态任务、对话系统
    git clone https://github.com/internlm/huixiangdou --depth=1 repodir/huixiangdou
    ```
 
-   ![image-20240407104549705](img\image-20240407104549705.png)
+   ![image-20240407104549705](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240407104549705.png)
 
    提取知识库特征，创建向量数据库。数据库向量化的过程应用到了 **LangChain** 的相关模块，默认嵌入和重排序模型调用的网易 **BCE 双语模型**，如果没有在 `config.ini` 文件中指定本地模型路径，茴香豆将自动从 **HuggingFace** 拉取默认模型。
 
@@ -294,7 +294,7 @@ echo '[
 ]' > /root/huixiangdou/resource/good_questions.json
 ```
 
-![image-20240407104626077](img\image-20240407104626077.png)		
+![image-20240407104626077](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240407104626077.png)		
 
 ​		再创建一个测试用的问询列表，用来测试拒答流程是否起效：
 
@@ -307,7 +307,7 @@ echo '[
 ]' > ./test_queries.json
 ```
 
-​		![image-20240407104653926](img\image-20240407104653926.png)
+​		![image-20240407104653926](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240407104653926.png)
 
 ​		在确定好语料来源后，运行下面的命令，创建 RAG 检索过程中使用的向量数据库：
 
@@ -321,13 +321,13 @@ python3 -m huixiangdou.service.feature_store --sample ./test_queries.json
 
 ​		向量数据库的创建需要等待一小段时间，过程约占用 1.6G 显存。
 
-![image-20240407112054201](img\image-20240407112054201.png)
+![image-20240407112054201](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240407112054201.png)
 
 ​		完成后，**Huixiangdou** 相关的新增知识就以向量数据库的形式存储在 `workdir` 文件夹下。
 
 ​		检索过程中，茴香豆会将输入问题与两个列表中的问题在向量空间进行相似性比较，判断该问题是否应该回答，避免群聊过程中的问答泛滥。确定的回答的问题会利用基础模型提取关键词，在知识库中检索 `top K` 相似的 `chunk`，综合问题和检索到的 `chunk` 生成答案。
 
-![image-20240407112127367](img\image-20240407112127367.png)
+![image-20240407112127367](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240407112127367.png)
 
 3. 运行茴香豆知识助手
 
@@ -342,7 +342,7 @@ python3 -m huixiangdou.service.feature_store --sample ./test_queries.json
 
    RAG 技术的优势就是非参数化的模型调优，这里使用的仍然是基础模型 `InternLM2-Chat-7B`， 没有任何额外数据的训练。面对同样的问题，我们的**茴香豆技术助理**能够根据我们提供的数据库生成准确的答案：
 
-​	![image-20240407112612425](img\image-20240407112612425.png)
+​	![image-20240407112612425](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240407112612425.png)
 
-![image-20240407112622986](img\image-20240407112622986.png)
+![image-20240407112622986](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240407112622986.png)
 

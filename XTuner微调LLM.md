@@ -18,17 +18,17 @@
   - 使用场景：让模型学会对话模板，根据人类指令进行对话
   - 训练数据：高质量的对话、问答数据
 
-![image-20240416123759714](C:\Users\ASUS\Desktop\xtuner\img\image-20240416123759714.png)
+![image-20240416123759714](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416123759714.png)
 
-![image-20240416123908015](C:\Users\ASUS\Desktop\xtuner\img\image-20240416123908015.png)
+![image-20240416123908015](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416123908015.png)
 
 #### 3.数据格式
 
-![image-20240416124135699](C:\Users\ASUS\Desktop\xtuner\img\image-20240416124135699.png)
+![image-20240416124135699](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416124135699.png)
 
-![image-20240416124219872](C:\Users\ASUS\Desktop\xtuner\img\image-20240416124219872.png)
+![image-20240416124219872](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416124219872.png)
 
-![image-20240416124315193](C:\Users\ASUS\Desktop\xtuner\img\image-20240416124315193.png)
+![image-20240416124315193](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416124315193.png)
 
 #### 4.LoRA和QLoRA
 
@@ -60,7 +60,7 @@
 
 - ##### 解决方案：
 
-  ![image-20240416124640277](C:\Users\ASUS\Desktop\xtuner\img\image-20240416124640277.png)
+  ![image-20240416124640277](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416124640277.png)
 
   针对这个问题，文章提出将∆W进行低秩分解，分解成两个矩阵A（维度是d * r）、B（维度是r * k），其中r远远小于d和k的最小值，然后我们就可以计算∆W和AB的参数量：
 
@@ -90,7 +90,7 @@ A的形状是dxr，B的形状是rxk，则A的参数量=dxr，B的参数量=rxd�
 
 在LoRA的基础上，添加了NF4的数据压缩（信息理论中最有的正太分布数据量化数据类型），进一步减少了显存和内存的消耗；然后添加一组可学习的LoRA权重，这些权重通过量化权重的反向传播梯度进行调整。
 
-![image-20240416124745395](C:\Users\ASUS\Desktop\xtuner\img\image-20240416124745395.png)
+![image-20240416124745395](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416124745395.png)
 
 块状 k-bit 量化：既压缩了数据，又解决了异常值（我理解为噪声）对数据压缩的影响。我理解为：数据分布不是线性的，因此利用块量化（类似分治？）进行数据压缩。
 
@@ -117,7 +117,7 @@ A的形状是dxr，B的形状是rxk，则A的参数量=dxr，B的参数量=rxd�
   - 训练方案覆盖NVIDIA 20系列以上所有显卡
   - 最低只需要8GB显存即可微调7B模型
 
-![image-20240416125256725](C:\Users\ASUS\Desktop\xtuner\img\image-20240416125256725.png)
+![image-20240416125256725](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416125256725.png)
 
 #### 2.XTuner快速上手
 
@@ -133,7 +133,7 @@ A的形状是dxr，B的形状是rxk，则A的参数量=dxr，B的参数量=rxd�
   xtuner list-cfg -p internlm_20b
   ```
 
-![image-20240416125538832](C:\Users\ASUS\Desktop\xtuner\img\image-20240416125538832.png)
+![image-20240416125538832](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416125538832.png)
 
 
 
@@ -143,9 +143,9 @@ A的形状是dxr，B的形状是rxk，则A的参数量=dxr，B的参数量=rxd�
   xtuner train internlm_20b_qlora_oasst1_512_e3
   ```
 
-  ![image-20240416125545457](C:\Users\ASUS\Desktop\xtuner\img\image-20240416125545457.png)
+  ![image-20240416125545457](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416125545457.png)
 
-![image-20240416125610072](C:\Users\ASUS\Desktop\xtuner\img\image-20240416125610072.png)
+![image-20240416125610072](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416125610072.png)
 
 - 对话
 
@@ -157,11 +157,11 @@ A的形状是dxr，B的形状是rxk，则A的参数量=dxr，B的参数量=rxd�
 
 #### 3.XTuner数据引擎
 
-![image-20240416125935370](C:\Users\ASUS\Desktop\xtuner\img\image-20240416125935370.png)
+![image-20240416125935370](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416125935370.png)
 
-![image-20240416130025223](C:\Users\ASUS\Desktop\xtuner\img\image-20240416130025223.png)
+![image-20240416130025223](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416130025223.png)
 
-![image-20240416130034959](C:\Users\ASUS\Desktop\xtuner\img\image-20240416130034959.png)
+![image-20240416130034959](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416130034959.png)
 
 ```
 xtuner copy-cfg internlm_20b_qlora_alpaca_e3 ./  # 拷贝配置模板
@@ -171,27 +171,27 @@ xtuner train internlm_20b_qlora_alpaca_e3  		 # 启动训练
 
 ## 三、8GB玩转LMM
 
-![image-20240416131803094](C:\Users\ASUS\Desktop\xtuner\img\image-20240416131803094.png)
+![image-20240416131803094](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416131803094.png)
 
-![image-20240416132218143](C:\Users\ASUS\Desktop\xtuner\img\image-20240416132218143.png)
+![image-20240416132218143](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416132218143.png)
 
 ## 四、InternLM2 1.8B 模型
 
-![image-20240416131946796](C:\Users\ASUS\Desktop\xtuner\img\image-20240416131946796.png)
+![image-20240416131946796](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416131946796.png)
 
 ## 五、多模态LLM微调
 
 #### 1.给LLM装上电子眼：多模态LLM原理简介
 
-![image-20240416132314247](C:\Users\ASUS\Desktop\xtuner\img\image-20240416132314247.png)
+![image-20240416132314247](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416132314247.png)
 
 #### 2.什么型号的电子眼：LLaVA方案简介
 
-![image-20240416132426586](C:\Users\ASUS\Desktop\xtuner\img\image-20240416132426586.png)
+![image-20240416132426586](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416132426586.png)
 
 #### 3.快速上手
 
-![image-20240416132509611](C:\Users\ASUS\Desktop\xtuner\img\image-20240416132509611.png)
+![image-20240416132509611](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416132509611.png)
 
 ## 六、Agent
 

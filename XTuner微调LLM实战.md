@@ -655,9 +655,9 @@ streamlit run /root/ft/web_demo/InternLM/chat/web_demo.py --server.address 127.0
 
 
 
-![image-20240418104735279](C:\Users\ASUS\Desktop\xtuner\img\image-20240418104735279.png)
+![image-20240418104735279](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240418104735279.png)
 
-![image-20240418104643296](C:\Users\ASUS\Desktop\xtuner\img\image-20240418104643296.png)
+![image-20240418104643296](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240418104643296.png)
 
 
 
@@ -665,18 +665,18 @@ streamlit run /root/ft/web_demo/InternLM/chat/web_demo.py --server.address 127.0
 
 使用所有数据微调需要一天左右的时间，训练五千条数据的话，微调只需要五十分钟左右
 
-![image-20240418105657140](C:\Users\ASUS\Desktop\xtuner\img\image-20240418105657140.png)
+![image-20240418105657140](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240418105657140.png)
 
 - ### 网页demo
 
 
 
-![image-20240418133945661](C:\Users\ASUS\Desktop\xtuner\img\image-20240418133945661.png)
+![image-20240418133945661](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240418133945661.png)
 
-![image-20240418133956676](C:\Users\ASUS\Desktop\xtuner\img\image-20240418133956676.png)
+![image-20240418133956676](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240418133956676.png)
 
-![image-20240418134031949](C:\Users\ASUS\Desktop\xtuner\img\image-20240418134031949.png)
+![image-20240418134031949](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240418134031949.png)
 
-![image-20240418134040519](C:\Users\ASUS\Desktop\xtuner\img\image-20240418134040519.png)
+![image-20240418134040519](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240418134040519.png)
 
 可以看出来回答的很详细也很准确。自己实践了一圈下来，Xtuner这个架构确实是很方便，用户基本上只需要构建自己的对话数据集就可以了，剩下的全部交给XTuner。

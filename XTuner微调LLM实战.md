@@ -29,7 +29,7 @@
   pip install -e '.[all]'
   ```
 
-![image-20240416134658501](C:\Users\ASUS\Desktop\xtuner\img\image-20240416134658501.png)
+![image-20240416134658501](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416134658501.png)
 
 
 
@@ -81,7 +81,7 @@
       json.dump(data, f, ensure_ascii=False, indent=4)
   ```
 
-![image-20240417165145488](C:\Users\ASUS\Desktop\xtuner\img\image-20240417165145488.png)
+![image-20240417165145488](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240417165145488.png)
 
 输入以下指令生成数据
 
@@ -89,7 +89,7 @@
 python /root/ft/data/generate_data.py
 ```
 
-![image-20240417175739219](C:\Users\ASUS\Desktop\xtuner\img\image-20240417175739219.png)
+![image-20240417175739219](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240417175739219.png)
 
 
 
@@ -124,7 +124,7 @@ python /root/ft/data/generate_data.py
 
 
 
-![image-20240416134841501](C:\Users\ASUS\Desktop\xtuner\img\image-20240416134841501.png)
+![image-20240416134841501](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416134841501.png)
 
 
 
@@ -140,7 +140,7 @@ python /root/ft/data/generate_data.py
   xtuner list-cfg -p internlm2_1_8b
   ```
 
-![image-20240416134940486](C:\Users\ASUS\Desktop\xtuner\img\image-20240416134940486.png)
+![image-20240416134940486](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416134940486.png)
 
 
 
@@ -154,13 +154,13 @@ mkdir -p /root/ft/config
 xtuner copy-cfg internlm2_1_8b_qlora_alpaca_e3 /root/ft/config
 ```
 
-![image-20240416135037333](C:\Users\ASUS\Desktop\xtuner\img\image-20240416135037333.png)
+![image-20240416135037333](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416135037333.png)
 
 
 
 打印文件树
 
-![image-20240416135148980](C:\Users\ASUS\Desktop\xtuner\img\image-20240416135148980.png)
+![image-20240416135148980](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240416135148980.png)
 
 
 
@@ -242,17 +242,17 @@ xtuner copy-cfg internlm2_1_8b_qlora_alpaca_e3 /root/ft/config
 
 
 
-![image-20240417165221684](C:\Users\ASUS\Desktop\xtuner\img\image-20240417165221684.png)
+![image-20240417165221684](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240417165221684.png)
 
-![image-20240417165252617](C:\Users\ASUS\Desktop\xtuner\img\image-20240417165252617.png)
+![image-20240417165252617](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240417165252617.png)
 
 可以看出大约使用了九分钟时间
 
 - deepspeed加速训练
 
-![image-20240417170851263](C:\Users\ASUS\Desktop\xtuner\img\image-20240417170851263.png)
+![image-20240417170851263](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240417170851263.png)
 
-![image-20240417170916192](C:\Users\ASUS\Desktop\xtuner\img\image-20240417170916192.png)
+![image-20240417170916192](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240417170916192.png)
 
 可以看出只用了不到八分钟的时间，不使用加速的情况下九分钟，训练速度有所提升，但不多！
 
@@ -271,13 +271,13 @@ mkdir -p /root/ft/huggingface
 xtuner convert pth_to_hf /root/ft/train/internlm2_1_8b_qlora_alpaca_e3_copy.py /root/ft/train/iter_768.pth /root/ft/huggingface
 ```
 
-![image-20240417171621135](C:\Users\ASUS\Desktop\xtuner\img\image-20240417171621135.png)
+![image-20240417171621135](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240417171621135.png)
 
-![image-20240417171634698](C:\Users\ASUS\Desktop\xtuner\img\image-20240417171634698.png)
+![image-20240417171634698](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240417171634698.png)
 
 
 
-![image-20240417151825098](C:\Users\ASUS\Desktop\xtuner\img\image-20240417151825098.png)
+![image-20240417151825098](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240417151825098.png)
 
 
 
@@ -298,11 +298,11 @@ export MKL_SERVICE_FORCE_INTEL=1
 xtuner convert merge /root/ft/model /root/ft/huggingface /root/ft/final_model
 ```
 
-![image-20240417152956518](C:\Users\ASUS\Desktop\xtuner\img\image-20240417152956518.png)
+![image-20240417152956518](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240417152956518.png)
 
 ​		整合完成后，在保存位置可以看到以下内容：
 
-![image-20240418085938006](C:\Users\ASUS\Desktop\xtuner\img\image-20240418085938006.png)
+![image-20240418085938006](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240418085938006.png)
 
 - ### 对话测试
 
@@ -313,7 +313,7 @@ xtuner convert merge /root/ft/model /root/ft/huggingface /root/ft/final_model
   xtuner chat /root/ft/final_model --prompt-template internlm2_chat
   ```
 
-![image-20240417175313926](C:\Users\ASUS\Desktop\xtuner\img\image-20240417175313926.png)
+![image-20240417175313926](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240417175313926.png)
 
 - ### Web端部署测试
 
@@ -637,11 +637,11 @@ ssh -CNg -L 6006:127.0.0.1:6006 root@ssh.intern-ai.org.cn -p <你的端口号>
 streamlit run /root/ft/web_demo/InternLM/chat/web_demo.py --server.address 127.0.0.1 --server.port 6006
 ```
 
-![image-20240418091025001](C:\Users\ASUS\Desktop\xtuner\img\image-20240418091025001.png)
+![image-20240418091025001](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240418091025001.png)
 
 打开[http://127.0.0.1:6006](http://127.0.0.1:6006/)后会加载模型，加载完成之后即可开始对话
 
-![image-20240418091157364](C:\Users\ASUS\Desktop\xtuner\img\image-20240418091157364.png)
+![image-20240418091157364](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240418091157364.png)
 
 严重过拟合，发啥都只回复“我是千里的小助手内在1.8B大模型书生·浦语的1.8B大模型哦”！！！！
 

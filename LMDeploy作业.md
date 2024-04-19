@@ -11,7 +11,7 @@
 
   运行之后的结果截图
 
-  ![image-20240419130822537](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240419130822537.png)
+  ![image-20240419130822537](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419130822537.png)
 
 - 运行下面的命令安装LMDeploy
 
@@ -21,7 +21,7 @@
 
   安装完成的截图
 
-  ![image-20240419131100382](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy作业.assets\image-20240419131100382.png)
+  ![image-20240419131100382](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419131100382.png)
 
   使用以下命令打印看看当前环境是否有lmdeploy
 
@@ -29,7 +29,7 @@
   conda list
   ```
 
-  ![image-20240419131222663](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy作业.assets\image-20240419131222663.png)
+  ![image-20240419131222663](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419131222663.png)
 
   
 
@@ -47,7 +47,7 @@
 
   完成之后会发现/root/路径下多了一个名为internlm2-chat-1_8b的文件夹
 
-  ![image-20240419131644348](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy作业.assets\image-20240419131644348.png)
+  ![image-20240419131644348](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419131644348.png)
 
 - 使用transformer库运行模型
 
@@ -57,7 +57,7 @@
   touch /root/pipeline_transformer.py
   ```
 
-  ![image-20240419131849166](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy作业.assets\image-20240419131849166.png)
+  ![image-20240419131849166](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419131849166.png)
 
   将以下内容复制进去
 
@@ -84,7 +84,7 @@
 
   注意检查红框中的路径是否正确
 
-  ![image-20240419131943584](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy作业.assets\image-20240419131943584.png)
+  ![image-20240419131943584](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419131943584.png)
 
   然后利用下面的命令在终端运行代码
 
@@ -94,7 +94,7 @@
 
   运行结果如下
 
-  ![image-20240419132830041](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy作业.assets\image-20240419132830041.png)
+  ![image-20240419132830041](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419132830041.png)
 
 - 使用LMDeploy与模型对话
 
@@ -110,9 +110,9 @@
 
   运行之后进行对话的截图
 
-  ![image-20240419133200854](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy作业.assets\image-20240419133200854.png)
+  ![image-20240419133200854](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419133200854.png)
 
-  ![image-20240419133226308](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy作业.assets\image-20240419133226308.png)
+  ![image-20240419133226308](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419133226308.png)
 
 
 

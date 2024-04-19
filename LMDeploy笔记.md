@@ -14,7 +14,7 @@
     - 服务器端:CPU部署，单GPU/TPU/NPU部署，多卡/集群部署等等
     - 移动端/边缘端:移动机器人，手机等等
 
-![image-20240419134042248](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy笔记.assets\image-20240419134042248.png)
+![image-20240419134042248](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419134042248.png)
 
 
 
@@ -27,7 +27,7 @@
     - 20B算是大模型里的“小”模型了，若模型参数规模达到175B(GPT-3)，Batch-Size(BS)再大一点，每次推理计算量将达到干万亿量级。
     - 以NVIDIA A100为例，单张理论FP16运算性能为每秒77.97 TFLOPS3](77万亿)，性能捉紧。
 
-    ![image-20240419134005312](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy笔记.assets\image-20240419134005312.png)
+    ![image-20240419134005312](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419134005312.png)
 
   - ##### 内存开销巨大
 
@@ -35,14 +35,14 @@
     - 大模型在推理过程中，为避免重复计算，会将计算注意力(Attention)得到的KV进行缓存。根据InternLM2技术报告!1提供的模型参数数据，以及KV Cache空间估算方法[2)，以FP16为例，在batch-size为16、输入512 tokens、输出32 tokens的情境下，仅20B模型就会产生10.3GB的缓存。
     - 目前，以NVIDIA RTX 4060消费级显卡为例(参考零售价￥2399B))，单卡显存仅有8GB;NVIDIA A100单卡显存仅有80GB.
 
-    ![image-20240419134239699](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy笔记.assets\image-20240419134239699.png)
+    ![image-20240419134239699](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419134239699.png)
 
   - ##### 访存瓶颈
 
     - 大模型推理是“访存密集”型任务。目前硬件计算速度“远快于”显存带宽，存在严重的访存性能瓶颈。
     - 以RTX 4090推理175B大模型为例，BS为1时计算量为6.83TFLOPS，远低于82.58 TFLOPS的FP16计算能力:但访存量为32.62 TB，是显存带宽每秒处理能力的30倍。
 
-    ![image-20240419134359967](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy笔记.assets\image-20240419134359967.png)
+    ![image-20240419134359967](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419134359967.png)
 
   - ##### 动态请求
 
@@ -66,7 +66,7 @@
 
     根据预定义规则移除连接或分层结构，同时保持整体网络结构。这种方法一次性地针对整组权重，优势在于降低模型复杂性和内存使用，同时保持整体的LLM结构完整。
 
-  ![image-20240419134706286](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy笔记.assets\image-20240419134706286.png)
+  ![image-20240419134706286](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419134706286.png)
 
 - #### 知识蒸馏（Knowledge Distillation，KD）
 
@@ -78,7 +78,7 @@
 
   - ##### 指令跟随（IF）：LaMini-LM
 
-  ![image-20240419134955190](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy笔记.assets\image-20240419134955190.png)
+  ![image-20240419134955190](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419134955190.png)
 
 - #### 量化（Quantization）
 
@@ -96,7 +96,7 @@
 
     在LLM的训练阶段完成后对其参数进行量化。PTQ的主要目标是减少LLM的存储和计算复杂性，而无需对LLM架构进行修改或进行重新训练。
 
-  ![image-20240419135227835](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy笔记.assets\image-20240419135227835.png)
+  ![image-20240419135227835](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419135227835.png)
 
 
 
@@ -136,17 +136,17 @@
 
   ##### LMDeploy TurboMind 引擎拥有卓越的推理能力，在各种规模的模型上，每秒处理的请求数是 VLLM的1.36~1.85 倍。在静态推理能力方面，TurboMind 4bit 模型推理速度(out token/s)远高于FP16/BF16推理。在小batch时，提高到2.4倍。
 
-  ![image-20240419135731103](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy笔记.assets\image-20240419135731103.png)
+  ![image-20240419135731103](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419135731103.png)
 
 - #### 推理视觉多模态大模型
 
   LMDeploy提供了对视觉多模态大模型llava的支持，有方便的运行代码
 
-  ![image-20240419135913177](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy笔记.assets\image-20240419135913177.png)
+  ![image-20240419135913177](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419135913177.png)
 
-  ![image-20240419135921341](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy笔记.assets\image-20240419135921341.png)
+  ![image-20240419135921341](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419135921341.png)
 
 - #### 支持的模型
 
-  ![image-20240419135956179](C:\Users\ASUS\Desktop\lmdepoly\LMDeploy笔记.assets\image-20240419135956179.png)
+  ![image-20240419135956179](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419135956179.png)
 

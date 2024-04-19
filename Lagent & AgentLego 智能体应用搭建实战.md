@@ -18,7 +18,7 @@
 
   环境配置完的截图
 
-  ![image-20240419174832884](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419174832884.png)
+  ![image-20240419174832884](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419174832884.png)
 
 #### 2. 安装Lagent和AgentLego
 
@@ -31,11 +31,11 @@ git clone https://gitee.com/internlm/agentlego.git
 cd agentlego && git checkout 7769e0d && pip install -e . && cd ..
 ```
 
-![image-20240419174948003](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419174948003.png)
+![image-20240419174948003](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419174948003.png)
 
-![image-20240419175205489](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419175205489.png)
+![image-20240419175205489](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419175205489.png)
 
-![image-20240419175311705](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419175311705.png)
+![image-20240419175311705](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419175311705.png)
 
 #### 3. 安装其他依赖
 
@@ -44,9 +44,9 @@ conda activate agent
 pip install lmdeploy==0.3.0
 ```
 
-![image-20240419175608942](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419175608942.png)
+![image-20240419175608942](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419175608942.png)
 
-![image-20240419175655411](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419175655411.png)
+![image-20240419175655411](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419175655411.png)
 
 #### 4. 准备Tutorial
 
@@ -55,7 +55,7 @@ cd /root/agent
 git clone -b camp2 https://gitee.com/internlm/Tutorial.git
 ```
 
-<img src="C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419175719065.png" alt="image-20240419175719065" style="zoom:200%;" />
+<img src="https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419175719065.png" alt="image-20240419175719065" style="zoom:200%;" />
 
 
 
@@ -73,7 +73,7 @@ git clone -b camp2 https://gitee.com/internlm/Tutorial.git
                                 --cache-max-entry-count 0.1
     ```
 
-    ![image-20240419180303727](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419180303727.png)
+    ![image-20240419180303727](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419180303727.png)
 
   - 新建一个终端窗口，启动并使用 Lagent Web Demo
 
@@ -82,7 +82,7 @@ git clone -b camp2 https://gitee.com/internlm/Tutorial.git
     streamlit run internlm2_agent_web_demo.py --server.address 127.0.0.1 --server.port 7860
     ```
 
-    ![image-20240419180749690](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419180749690.png)
+    ![image-20240419180749690](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419180749690.png)
 
   - 同样的，在本地的终端里面，ssh连接当前开发机
 
@@ -92,7 +92,7 @@ git clone -b camp2 https://gitee.com/internlm/Tutorial.git
 
   - 接着打开网址 [http://localhost:7860](http://localhost:7860/)，并天机啊模型IP、选择插件，如下图所示
 
-    ![image-20240419180948738](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419180948738.png)
+    ![image-20240419180948738](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419180948738.png)
 
   - 接着，就可以输入prompt进行论文的检索了，比如输入如下prompt
 
@@ -100,13 +100,13 @@ git clone -b camp2 https://gitee.com/internlm/Tutorial.git
     请帮我搜索 InternLM2 Technical Report
     ```
 
-    ![image-20240419181123294](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419181123294.png)
+    ![image-20240419181123294](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419181123294.png)
 
     ```
     请帮我搜索与Depth Estimation有关的论文
     ```
 
-    ![image-20240419181244145](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419181244145.png)
+    ![image-20240419181244145](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419181244145.png)
 
 
 
@@ -119,7 +119,7 @@ git clone -b camp2 https://gitee.com/internlm/Tutorial.git
   wget http://download.openmmlab.com/agentlego/road.jpg
   ```
 
-  ![image-20240419205143647](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419205143647.png)
+  ![image-20240419205143647](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419205143647.png)
 
 - 安装AgentLego所需要的额外依赖库
 
@@ -129,11 +129,11 @@ git clone -b camp2 https://gitee.com/internlm/Tutorial.git
   mim install mmdet==3.3.0
   ```
 
-  ![image-20240419210613856](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419210613856.png)
+  ![image-20240419210613856](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419210613856.png)
 
-![image-20240419210658573](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419210658573.png)
+![image-20240419210658573](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419210658573.png)
 
-![image-20240419210730784](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419210730784.png)
+![image-20240419210730784](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419210730784.png)
 
 - 利用下面的指令创建py文件
 
@@ -177,8 +177,8 @@ git clone -b camp2 https://gitee.com/internlm/Tutorial.git
   python /root/agent/direct_use.py
   ```
 
-  ![image-20240419211618457](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419211618457.png)
+  ![image-20240419211618457](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419211618457.png)
 
-  ![image-20240419211714530](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419211714530.png)
+  ![image-20240419211714530](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419211714530.png)
 
-  ![image-20240419211922057](C:\Users\ASUS\Desktop\Agent\Lagent & AgentLego 智能体应用搭建实战.assets\image-20240419211922057.png)
+  ![image-20240419211922057](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240419211922057.png)

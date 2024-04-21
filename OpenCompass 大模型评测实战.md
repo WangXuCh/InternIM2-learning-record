@@ -11,7 +11,7 @@
   source activate opencompass
   ```
 
-  ![image-20240420092751168](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240420092751168.png)
+  ![image-20240420092751168](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240420092751168.png)
 
   然后使用git命令下载opencompass，并从源码安装opencompass
 
@@ -21,7 +21,7 @@
   pip install -e .
   ```
 
-  ![image-20240420092911534](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240420092911534.png)
+  ![image-20240420092911534](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240420092911534.png)
 
   如果上述安装未成功，则执行下面的命令，从reauirments.txt中逐一安装依赖
 
@@ -38,7 +38,7 @@
   unzip OpenCompassData-core-20231110.zip
   ```
 
-  ![image-20240420093307826](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240420093307826.png)
+  ![image-20240420093307826](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240420093307826.png)
 
   
 
@@ -48,9 +48,9 @@
   python tools/list_configs.py internlm ceval
   ```
 
-  ![image-20240420093712045](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240420093712045.png)
+  ![image-20240420093712045](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240420093712045.png)
 
-  ![image-20240420093728118](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240420093728118.png)
+  ![image-20240420093728118](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240420093728118.png)
 
 - #### 启动评测
 
@@ -60,7 +60,7 @@
 
   发现报错
 
-  ![image-20240421110923005](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240421110923005.png)
+  ![image-20240421110923005](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240421110923005.png)
 
   ，这个报错看内容说的是MKL_SERVICE_FORCE_INTEL，这不就是XTuner哪一节课实战部分需要解决的线程报错吗？直接运行下面代码
 
@@ -70,7 +70,7 @@
   
   之后，再次自动测评，发现报错如下
 
-  ![image-20240421111117713](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240421111117713.png)
+  ![image-20240421111117713](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240421111117713.png)
   
   按照文档提示，用下面的指令安装protobuf
   
@@ -78,14 +78,14 @@
   pip install protobuf
   ```
   
-  ![image-20240421111139089](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240421111139089.png)
+  ![image-20240421111139089](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240421111139089.png)
   
   然后，再次启动测评
   
-  ![image-20240421111834952](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240421111834952.png)
+  ![image-20240421111834952](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240421111834952.png)
   
   评测完成后显示如下：
   
-  ![image-20240421113437745](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240421113437745.png)
+  ![image-20240421113437745](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240421113437745.png)
   
-  ![image-20240421113508943](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240421113508943.png)
+  ![image-20240421113508943](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240421113508943.png)

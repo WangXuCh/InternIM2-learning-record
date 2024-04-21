@@ -52,7 +52,7 @@
 
 ### 6.工具架构
 
-![image-20240420090343011](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240420090343011.png)
+![image-20240420090343011](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240420090343011.png)
 
 - 模型层：大模型评测所涉及的主要模型种类，OpenCompass以基座模型和对话模型作为重点评测对象。
 - 能力层：OpenCompass从本方案从通用能力和特色能力两个方面来进行评测维度设计。在模型通用能力方面，从语言、知识、理解、推理、安全等多个能力维度进行评测。在特色能力方面，从长文本、代码、工具、知识增强等维度进行评测。
@@ -78,7 +78,7 @@ OpenCompass采取客观评测与主观评测相结合的方法。针对具有确
 
 ### 9. OpenCompass评测流水线
 
-![image-20240420091037521](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240420091037521.png)
+![image-20240420091037521](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240420091037521.png)
 
 ## 二、模型评测实战
 
@@ -91,7 +91,7 @@ OpenCompass采取客观评测与主观评测相结合的方法。针对具有确
   source activate opencompass
   ```
 
-  ![image-20240420092751168](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240420092751168.png)
+  ![image-20240420092751168](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240420092751168.png)
 
   然后使用git命令下载opencompass，并从源码安装opencompass
 
@@ -101,7 +101,7 @@ OpenCompass采取客观评测与主观评测相结合的方法。针对具有确
   pip install -e .
   ```
 
-  ![image-20240420092911534](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240420092911534.png)
+  ![image-20240420092911534](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240420092911534.png)
 
   如果上述安装未成功，则执行下面的命令，从reauirments.txt中逐一安装依赖
 
@@ -118,7 +118,7 @@ OpenCompass采取客观评测与主观评测相结合的方法。针对具有确
   unzip OpenCompassData-core-20231110.zip
   ```
 
-  ![image-20240420093307826](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240420093307826.png)
+  ![image-20240420093307826](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240420093307826.png)
 
   
 
@@ -128,9 +128,9 @@ OpenCompass采取客观评测与主观评测相结合的方法。针对具有确
   python tools/list_configs.py internlm ceval
   ```
 
-  ![image-20240420093712045](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240420093712045.png)
+  ![image-20240420093712045](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240420093712045.png)
 
-  ![image-20240420093728118](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240420093728118.png)
+  ![image-20240420093728118](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240420093728118.png)
 
 - #### 启动评测
 
@@ -140,7 +140,7 @@ OpenCompass采取客观评测与主观评测相结合的方法。针对具有确
 
   发现报错
 
-  ![image-20240421110923005](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240421110923005.png)
+  ![image-20240421110923005](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240421110923005.png)
 
   ，这个报错看内容说的是MKL_SERVICE_FORCE_INTEL，这不就是XTuner哪一节课实战部分需要解决的线程报错吗？直接运行下面代码
 
@@ -150,7 +150,7 @@ OpenCompass采取客观评测与主观评测相结合的方法。针对具有确
   
   之后，再次自动测评，发现报错如下
 
-  ![image-20240421111117713](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240421111117713.png)
+  ![image-20240421111117713](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240421111117713.png)
   
   按照文档提示，用下面的指令安装protobuf
   
@@ -158,14 +158,14 @@ OpenCompass采取客观评测与主观评测相结合的方法。针对具有确
   pip install protobuf
   ```
   
-  ![image-20240421111139089](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240421111139089.png)
+  ![image-20240421111139089](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240421111139089.png)
   
   然后，再次启动测评
   
-  ![image-20240421111834952](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240421111834952.png)
+  ![image-20240421111834952](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240421111834952.png)
   
   评测完成后显示如下：
   
-  ![image-20240421113437745](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240421113437745.png)
+  ![image-20240421113437745](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240421113437745.png)
   
-  ![image-20240421113508943](C:\Users\ASUS\Desktop\Agent\OpenCompass 大模型评测实战.assets\image-20240421113508943.png)
+  ![image-20240421113508943](https://github.com/WangXuCh/InternIM2-learning-record/blob/main/typora-user-images/image-20240421113508943.png)
